@@ -9,7 +9,7 @@ const TypeWriter = ({ text, streaming }) => {
   const computedSpeed = useCallback(() => {
     const speed = Math.floor(2000 / text.length);
     if (speed > 200) {
-      return 2000;
+      return 200;
     }
     return speed;
   }, [text]);
