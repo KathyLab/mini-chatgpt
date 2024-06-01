@@ -4,12 +4,12 @@ This is a simple demo application using React for the frontend and Koa.js for th
 > 💡 **About model**: you can choose whatever you want by configuring in backend.
 
 here is an example:
-
+![](./images/example.png)
 
 ## Project Structure
 
 ```
-chatGPT
+mini-chatgpt
 ├─ README.md
 ├─ chatgpt-frontend
 │  ├─ .dockerignore
