@@ -1,0 +1,21 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./chatgpt-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./chatgpt-frontend:/app
+    environment:
+      - NODE_ENV=development
+
+  backend:
+    build:
+      context: ./chatgpt-koa
+    ports:
+      - "3030:3030"
+    volumes:
+      - ./chatgpt-koa:/app
+    environment:
+      - NODE_ENV=development
